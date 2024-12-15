@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programmieren Tipps und Beispiele</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        section {
+            padding: 20px;
+            margin: 15px;
+            background-color: #fff;
+            border-radius: 8px;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            color: #fff;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 10px;
+            display: block;
+            border-radius: 5px;
+            font-size: 1.1em;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Programmieren Tipps und Beispiele</h1>
+    </header>
+
+    <nav>
+        <a href="#csharp">C#</a>
+        <a href="#html">HTML/CSS/JavaScript</a>
+        <a href="#java">Java</a>
+        <a href="#python">Python</a>
+        <a href="#batch">Batch</a>
+    </nav>
+
+    <section id="csharp">
+        <h2>C# Programmierung</h2>
+        <p>Hier findest du Tipps und Beispiele für C# in verschiedenen Anwendungen:</p>
+        <h3>Windows Forms Beispiel</h3>
+        <code>
+            using System;
+            using System.Windows.Forms;
+
+            public class Program
+            {
+                public static void Main()
+                {
+                    Application.Run(new Form());
+                }
+            }
+        </code>
+        <p>Verwendung von Windows Forms, um eine einfache GUI-App zu erstellen.</p>
+    </section>
+
+    <section id="html">
+        <h2>HTML, CSS und JavaScript</h2>
+        <p>Webentwicklung mit HTML, CSS und JavaScript:</p>
+        <h3>HTML Beispiel</h3>
+        <code>
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;Beispielseite&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Willkommen zur Beispielseite!&lt;/h1&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </code>
+        <h3>CSS Beispiel</h3>
+        <code>
+            body {
+                font-family: Arial, sans-serif;
+                background-color: #fafafa;
+            }
+            h1 {
+                color: #333;
+            }
+        </code>
+        <h3>JavaScript Beispiel</h3>
+        <code>
+            function greet() {
+                alert('Hallo, Welt!');
+            }
+        </code>
+    </section>
+
+    <section id="java">
+        <h2>Java Programmierung</h2>
+        <p>Hier sind Beispiele und Tipps für Java-Entwicklung:</p>
+        <h3>Einfaches Java-Programm</h3>
+        <code>
+            public class HelloWorld {
+                public static void main(String[] args) {
+                    System.out.println("Hallo, Welt!");
+                }
+            }
+        </code>
+        <h3>Java für Minecraft Plugins</h3>
+        <p>Hier ist ein einfaches Beispiel für ein Minecraft Plugin:</p>
+        <code>
+            public class MyPlugin extends JavaPlugin {
+                @Override
+                public void onEnable() {
+                    getLogger().info("Plugin aktiviert!");
+                }
+            }
+        </code>
+    </section>
+
+    <section id="python">
+        <h2>Python Programmierung</h2>
+        <p>Python für verschiedene Anwendungen:</p>
+        <h3>Discord Webhook Beispiel</h3>
+        <code>
+            import requests
+
+            webhook_url = 'https://discord.com/api/webhooks/your-webhook-id'
+            data = {"content": "Hallo, Discord!"}
+            requests.post(webhook_url, json=data)
+        </code>
+        <h3>Discord Bot Beispiel</h3>
+        <code>
+            import discord
+            from discord.ext import commands
+
+            bot = commands.Bot(command_prefix='!')
+
+            @bot.event
+            async def on_ready():
+                print(f'{bot.user} ist eingeloggt!')
+
+            bot.run('your-token')
+        </code>
+    </section>
+
+    <section id="batch">
+        <h2>Batch Programmierung</h2>
+        <p>Batch-Dateien für Automatisierung:</p>
+        <h3>Beispiel Batch-Datei</h3>
+        <code>
+            @echo off
+            echo Hallo, Welt!
+            pause
+        </code>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Programmier-Tipps. Alle Rechte vorbehalten.</p>
+    </footer>
+
+</body>
+</html>
