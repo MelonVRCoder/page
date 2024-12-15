@@ -3,79 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Downloads - MelonCity Client</title>
+    <title>Mein Linktree</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #1f1f1f;
-            color: #fff;
+            background-color: #f4f4f4;
             margin: 0;
             padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
         }
-        header {
-            background-color: #333;
-            padding: 20px;
+        .container {
             text-align: center;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5em;
-            color: #fff;
-        }
-        .download-container {
+            background: white;
             padding: 20px;
-            text-align: left;
-            margin: 0 10%;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 90%;
         }
-        .download-btn {
-            background-color: #ff5733;
-            color: white;
-            font-size: 1.2em;
-            padding: 10px 20px;
-            border: none;
-            cursor: pointer;
+        .container h1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        .link {
+            display: block;
+            margin: 10px 0;
+            padding: 10px;
             text-decoration: none;
-            margin: 10px 0; /* AbstÃ¤nde zwischen den Buttons */
-            display: block; /* Stapelt Buttons untereinander */
-            width: fit-content;
-            border-radius: 0; /* Eckige Buttons */
+            color: white;
+            background-color: #0073e6;
+            border-radius: 5px;
+            font-size: 18px;
+            transition: background-color 0.3s;
         }
-        .download-btn:hover {
-            background-color: #c14d22;
-        }
-        .download-btn.disabled {
-            background-color: #555;
-            color: #ccc;
-            cursor: not-allowed;
+        .link:hover {
+            background-color: #005bb5;
         }
     </style>
 </head>
 <body>
-
-    <header>
-        <h1>MelonCity Client Downloads</h1>
-    </header>
-
-    <div class="download-container">
-        <!-- CMC Pack v6 Button -->
-        <a href="https://workupload.com/file/HrjvcAZGSJp" class="download-btn" target="_blank">MelonCity Client Latest</a>
-
-        <!-- Download-Buttons -->
-        <a href="https://workupload.com/file/KkzkWeZSGqj" class="download-btn" target="_blank">MelonCity Client v1</a>
-        <a href="https://workupload.com/file/wVgN2ebwaAt" class="download-btn" target="_blank">MelonCity Client v2</a>
-        <a href="https://workupload.com/file/BAQbnc4TRG7" class="download-btn" target="_blank">MelonCity Client v3</a>
-        <a href="https://workupload.com/file/PUQmaw9XWb" class="download-btn" target="_blank">MelonCity Client v4</a>
-        <a href="https://workupload.com/file/HrjvcAZGSJp" class="download-btn" target="_blank">MelonCity Client v5</a>
-        
-
-        <!-- Inaktive Buttons -->
-        <button class="download-btn disabled">Download 6 - Kommt noch</button>
-        <button class="download-btn disabled">Download 7 - Kommt noch</button>
-        <button class="download-btn disabled">Download 8 - Kommt noch</button>
-        <button class="download-btn disabled">Download 9 - Kommt noch</button>
-        <button class="download-btn disabled">Download 10 - Kommt noch</button>
-        
+    <div class="container">
+        <h1>Mein Linktree</h1>
+        <a href="https://example.com" class="link" target="_blank">Beispiel-Link 1</a>
+        <a href="https://example.com" class="link" target="_blank">Beispiel-Link 2</a>
+        <a href="https://example.com" class="link" target="_blank">Beispiel-Link 3</a>
+        <a href="https://example.com" class="link" target="_blank">Beispiel-Link 4</a>
     </div>
-
 </body>
 </html>
